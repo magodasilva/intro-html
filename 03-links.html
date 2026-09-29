@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Links (Park)</title>
+</head>
+
+<body>
+    <h1>Âncora</h1>
+    <hr>
+
+    <h2>Conhecendo o elemento de âncora</h2>
+    <p> Para navegar na internet, utilizamos um elemento chamado de <strong> a(anchor/âncora) </strong> </p>
+
+    <p>Criando o elemento de navegação</p>
+
+    <!-- <a href="destino"> Texto do link </a> -->
+    <!-- href/hyperlink reference = referência de hipertexto  -->
+    <a href="https://google.com"> Clique aqui para acessar o google </a>
+
+    <hr>
+    <h2> Explorando mais conceitos </h2>
+    <h3> Link interno </h3>
+    <a href="02-listas.html"> Visite o site de listas </a>
+
+    <h3> Link externo </h3>
+    <a href="https://instagram.com" target="_blank"> Acessar o instagram </a>
+
+    <p> Utilizamos o atributo chamado de target. Esse atributo serve para indicar onde o link configurado no href será
+        aberto. </p>
+    <p> Algumas opções do target: </p>
+
+    <ul>
+        <li> <strong> _self </strong>: abre na mesma aba. É a configuração padrão. </li>
+        <li> <strong> _blank </strong>: abre o link em uma nova aba/janela. </li>
+        <li> <strong> _parent </strong>: abre no contexto pai, usado com iframe. </li>
+        <li> <strong> _top </strong>: abre no contexto mais externo também com iframe. </li>
+    </ul>
+
+    <h3> Link para email </h3>
+    <p> Também é possível configurar o elemento &lt; a &gt; para abrir o aplicativo de email do usuário. </p>
+    <a href="mailto:samucagameplay@gameplay.com" > samuel@contato.com </a>
+    <a href="mailto:exemplo@gmail.com" > Entre em contato: exemplo@gmail.com </a>
+
+    <h3> Link para telefone </h3>
+    <p>Também é possível configurar o elemento &lt; a &gt; para abrir o aplicativo de discagem de contato. </p>
+    <a href="tel:+551199999999" > Entre em contato pelo número: (11) 99999-9999 </a>
+
+    <h3> Link para download </h3>
+    <a href="02-listas.html" download > Baixe o arquivo de listas </a>
+
+    <p>Podemos também, indicar o nome do arquivo configurando o atributo de download </p>
+    <a href="02-listas.html" download="listas" > Baixe o arquivo de listas </a>
+
+
+</body>
+
+</html>

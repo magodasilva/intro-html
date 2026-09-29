@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sobre Formulários | HTML </title>
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fcfcfc;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Sobre formulários</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2> O que são formulários? </h2>
+            <p> Os formulários são uma das partes mais importantes do nosso <abbr title="HyperText Markup Language">
+                    HTML </abbr> semântico. Ele serve para: </p>
+
+            <ul>
+                <li> Entrada de dados </li>
+                <li> Interação </li>
+                <li> Acessiblidade </li>
+                <li> Validação e envio de informações </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2> Como trabalhar com um form no HTML? </h2>
+            <p> Para começarmos a trabalhar com um formulário dentro do HTML, utilizamos o elemento de &lt; form &gt; .
+            </p>
+
+            <p> Esse elemento, representa um formulário interativo. </p>
+
+            <h3> Criando a estrutura básica </h3>
+
+            <form>
+                <!-- Exemplo básico -->
+                <input type="text"> <br>
+
+                <label for="nome"> Nome </label> <br>
+                <input type="text" id="nome" name="nome"> <br>
+
+                <label for="email"> Email </label> <br>
+                <input type="email" name="email" id="email"> <br>
+
+                <input type="password" name="" id=""> <br>
+
+                <input type="date"> <br>
+
+                <input type="tel" name="" id=""> <br>
+
+                <label>
+                    <input type="checkbox" name="" id="">
+                    Aceito os termos de uso do site
+                </label>
+
+                <button type="submit"> Enviar formulário </button>
+            </form>
+
+        </section>
+
+        <section>
+            <h2> Formulários agrupados </h2>
+            <p> Para criarmos formulários agrupados, utilizamos o elemento &lt; fieldset &gt; e &lt; legend &gt; . </p>
+
+            <form>
+                <fieldset>
+                    <legend> Informações Pessoais </legend>
+
+                    <label for="nome-cadastro"> Nome </label> <br>
+                    <input type="text" name="nome-cadastro" id="nome-cadastro" placeholder="Ana Silva"  required > <br>
+
+                    <label for="email-cadastro"> Email </label> <br>
+                    <input type="email" name="email-cadastro" id="email-cadastro" placeholder="ana@ana.com" required> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Endereço </legend>
+
+                    <label for="cep"> CEP </label> <br>
+                    <input type="text" name="cep" id="cep" placeholder="87654-321"> <br>
+
+                    <label for="rua"> Rua </label> <br>
+                    <input type="text" name="rua" id="rua" placeholder="Rua Ali"> <br>
+
+                    <textarea name="" id="" maxlength="67" required></textarea>
+                </fieldset>
+
+                <button type="submit"> Enviar dados </button>
+            </form>
+            
+            <section>
+                <h2>Formulário da Clarinha</h2>
+                <form>
+                    <label for="html"> HTML </label>
+                    <input type="checkbox" name="html" id="html" required>
+                    
+                    <label for="css"> css </label>
+                    <input type="checkbox" name="css" id="css" required>
+
+                    <label for="javascript"> JavaScript </label>
+                    <input type="checkbox" name="javascript" id="javascript" required > <br><br>
+
+                    <label for="estado"> Selecione um estado: </label>
+                    <select name="estado" id="estado">
+                        <option value="sp"> São Paulo </option>
+                        <option value="rj"> Rio de Janeiro </option>
+                        <option value="mg"> Minas Gerais </option>
+                    </select>
+
+                   <br> <button type="submit"> Enviar os mimos para Clarinha </button>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site sobre a estrutura semântica do HTML5 e suas abordagens.">
+
+    <title> Sobre estrutura semântica | HTML </title>
+
+    <style>
+        body {
+            background-color: #1d1d1d;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        header {
+            background-color: brown;
+        }
+
+        section {
+            border: 4px solid greenyellow;
+            background-color: deeppink;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: tan;
+        }
+    </style>
+</head>
+
+<body>
+    <header> <!-- header - representa o cabeçalho de uma página ou de uma seção. -->
+        <h1> Logo </h1>
+        <nav> <!-- nav/navigation = representa uma área de navegação -->
+
+            <!-- agrupamos os itens de navegação dentro de uma lista por conta de acessibilidade. -->
+            <ul>
+                <li><a href="">Tópico 1</a></li>
+                <li><a href="">Tópico 2</a></li>
+                <li><a href="">Tópico 3</a></li>
+            </ul>
+
+            <!-- <a href="/">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a> -->
+        </nav>
+    </header>
+
+    <!-- main/principal = representa o conteúdo principal da página. Uma página deve ter apenas UM CONTEÚDO PRINCIPAL. -->
+    <main>
+        <section> <!-- section/seção - representa uma SEÇÃO TEMÁTICA DE CONTEÚDO. -->
+            <h2> Projetos </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur sequi magnam. Vel consequuntur
+                animi odit. Impedit possimus aliquid ut at tempore, sequi pariatur quo facere illo voluptatem harum vel.
+            </p>
+
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit consectetur sequi magnam. Vel consequuntur
+                animi odit. Impedit possimus aliquid ut at tempore, sequi pariatur quo facere illo voluptatem harum vel.
+            </p>
+        </section>
+
+        <section>
+            <h2> Contato </h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium modi earum laudantium repellendus,
+                similique provident itaque officiis ratione quos neque quis consectetur, quisquam iste ipsa. Illo earum
+                mollitia quam dolor. </p>
+
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium modi earum laudantium repellendus,
+                similique provident itaque officiis ratione quos neque quis consectetur, quisquam iste ipsa. Illo earum
+                mollitia quam dolor. </p>
+        </section>
+
+        <section>
+            <h2> Últimos artigos </h2>
+
+            <article> <!-- article/artigo - representa um conteúdo que faz sentido de maneira independente. -->
+                <h3> Aprendendo HTML </h3>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, explicabo, tempore dignissimos,
+                    eligendi iure laboriosam consequatur consectetur facilis aut id magni delectus ipsa repudiandae eius
+                    rerum? Facilis possimus labore facere? </p>
+            </article>
+
+            <article>
+                <h3> Aprendendo CSS </h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quibusdam sed ipsam enim eaque quas
+                    dolores id maiores eius minima iure, voluptate fuga sunt esse accusantium quae voluptatum earum
+                    reiciendis!</p>
+            </article>
+
+            <article>
+                <h3> Aprendendo JS </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde amet totam minima accusantium sequi,
+                    hic quam aliquid. Nesciunt earum quisquam commodi mollitia autem vitae blanditiis, enim placeat,
+                    alias aliquid error.</p>
+            </article>
+        </section>
+
+
+        <aside> <!-- aside - representa conteúdo relacionado, mas não essencial ao conteúdo principal -->
+            <h2> Artigos relacionados </h2>
+            <nav>
+                <ul>
+                    <li><a href="aprenda-java.html">Aprenda Java</a></li>
+                    <li><a href="domine-react.html">Domine React</a></li>
+                    <li><a href="explore-ux-ui.html">Explore UX e UI</a></li>
+                </ul>
+            </nav>
+
+
+            <article>
+                <header>
+                    <h3> Meu artigo </h3>
+                </header>
+
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptatem ullam dolorem quam
+                    pariatur quaerat quibusdam obcaecati temporibus? Eum eos illo, iure corporis reprehenderit
+                    voluptatibus voluptas culpa blanditiis cupiditate quam! </p>
+
+                <footer>
+                    <p> Publicado por JP </p>
+                </footer>
+            </article>
+        </aside>
+    </main>
+
+    <!-- footer - representa o rodapé de uma PÁGINA OU SEÇÃO -->
+    <footer>
+        <p> &copy; 2026 - Mago da Silva </p>
+        <address>
+            <a href="mailto:mago@dasilva.com"> E-mail: mago@dasilva.com </a>
+            <a href="tel:+55119876543219">Tel:(11) 9 87654-3219</a>
+            <p> Rua Ali, Número 19 - São Paulo - SP </p>
+        </address>
+
+        <nav>
+            <ul>
+                <li> <a href="/"> Página Inicial </a> </li>
+                <li> <a href="/"> Página de carreiras </a> </li>
+                <li> <a href="/"> Sobre a empresa </a> </li>
+                <li> <a href="/"> Termos e privacidade </a> </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
